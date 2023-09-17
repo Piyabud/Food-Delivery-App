@@ -26,7 +26,7 @@ function Slider() {
   useEffect(() => {
     const interval = setInterval(
       () => setCurrSlide((prev) => (prev === data.length - 1 ? 0 : prev + 1)),
-      2000
+      3500
     );
     return () => clearInterval(interval);
   }, []);
