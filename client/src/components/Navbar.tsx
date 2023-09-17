@@ -12,7 +12,7 @@ function Navbar() {
       h-12 text-red-500 p-4 
       flex items-center justify-between 
       border-b-2 border-b-red-500 uppercase 
-      md:h-24 lg:px-20 xl:px-40
+      md:h-24 lg:px-9 xl:px-40
     "
     >
       {/* LEFT LINK */}
@@ -29,7 +29,7 @@ function Navbar() {
       <div className="md:hidden">
         <Menu />
       </div>
-      {/* RIght LInk */}
+      {/* Right Link */}
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
         <div
           className="
@@ -39,7 +39,7 @@ function Navbar() {
         bg-orange-300 px-1 rounded-md"
         >
           <Image src="/phone.png" alt="" width={20} height={20} />
-          <span>123 456 789</span>
+          <span className="">123 456 789</span>
         </div>
         {!user ? (
           <Link href={"/login"}>Login</Link>
