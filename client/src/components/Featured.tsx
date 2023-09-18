@@ -4,7 +4,7 @@ import React from "react";
 
 function Featured() {
   return (
-    <div className="w-screen overflow-x-scroll text-red-500">
+    <div className="w-full overflow-x-scroll text-red-500">
       {/* Wrapper */}
       <div className="w-max flex">
         {/* SINGLE ITEM  */}
