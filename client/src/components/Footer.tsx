@@ -10,7 +10,10 @@ function Footer() {
   text-red-500 
     flex items-center justify-between"
     >
-      <Link href={"/"} className="font-semibold text-sm md:font-bold md:text-xl">
+      <Link
+        href={"/"}
+        className="font-semibold text-sm md:font-bold md:text-xl"
+      >
         PIZZA HEART{" "}
       </Link>
       <p>© ALL RIGHTS RESERVED.</p>
