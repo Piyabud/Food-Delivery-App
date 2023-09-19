@@ -8,8 +8,9 @@ function SingerProductPage() {
     <div className=" flex flex-wrap text-red-500">
       {pizzas.map((item, index) => (
         <Link
-          className="w-full h-[60vh] border-r-2 border-b-2 border-pink-500 
-          sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between group odd:bg-pink-50"
+          className="w-full h-[60vh] border-r-2 border-b-2 
+          sm:w-1/2 lg:w-1/3 p-4 
+          flex flex-col justify-between group odd:bg-pink-50"
           href={`/product/${item.id}`}
           key={index}
         >

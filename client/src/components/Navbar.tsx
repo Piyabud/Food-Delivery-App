@@ -16,7 +16,7 @@ function Navbar() {
     "
     >
       {/* LEFT LINK */}
-      <div className="hidden md:flex gap-8 flex-1 font-bold">
+      <div className="hidden md:flex gap-6 flex-1 font-bold">
         <Link href={"/"}>Homepage</Link>
         <Link href={"/menu"}>Menu</Link>
         <Link href={"/"}>Contract</Link>
