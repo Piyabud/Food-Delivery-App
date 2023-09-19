@@ -2,7 +2,10 @@ import React from 'react'
 
 function SingerProductPage() {
   return (
-    <div>SingerProductPage</div>
+    <div className=''>
+      {/* IMG-CON */}
+      {/* TEXT-CON */}
+    </div>
   )
 }
 
