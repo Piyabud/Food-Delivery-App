@@ -10,12 +10,18 @@ function CategoryPage() {
         <Link
           key={index}
           href={`/product/${product.id}`}
-          className="group w-full h-[60vh] sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between odd:bg-orange-50 relative overflow-hidden"
+          className="group w-full h-[60vh] border-r-2 border-b-2 
+          sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between odd:bg-pink-50  relative overflow-hidden"
         >
           {/* IMG-CON */}
           {product.img && (
             <div className="relative h-[80%]">
-              <Image src={product.img} alt="" fill className="object-contain hover:scale-[1.05] transition-all duration-300" />
+              <Image
+                src={product.img}
+                alt=""
+                fill
+                className="object-contain group-hover:scale-[1.025] transition-all duration-300"
+              />
             </div>
           )}
           {/* TEXT-CON */}
@@ -26,7 +32,6 @@ function CategoryPage() {
               Add to Cart
             </button>
           </div>
-          {/* Shine effect */}
         </Link>
       ))}
     </div>
