@@ -33,13 +33,13 @@ function Navbar() {
       <div className="hidden md:flex gap-4 items-center justify-end flex-1">
         <div
           className="
-            md:absolute top-3 r-2 lg:static 
+            md:absolute top-3 r-2 lg:static lg:py-2 lg:px-4
             flex items-center gap-2 
             cursor-pointer 
-          bg-orange-300 px-4 py-2 rounded-md"
+          bg-orange-300 px-3 rounded-md"
         >
           <Image src="/phone.png" alt="" width={20} height={20} />
-          <span className="font-medium text-xl">5678</span>
+          <span className="font-medium text-md">1209</span>
         </div>
         {!user ? (
           <Link
