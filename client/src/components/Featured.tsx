@@ -1,10 +1,11 @@
 import { featuredProducts } from "@/data";
 import Image from "next/image";
 import React from "react";
+import "./featureStyle.css";
 
 function Featured() {
   return (
-    <div className="w-full overflow-x-scroll text-red-500">
+    <div className=" w-full text-red-500 overFlowSetup">
       {/* Wrapper */}
       <div className="w-max flex">
         {/* SINGLE ITEM  */}
