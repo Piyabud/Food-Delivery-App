@@ -1,19 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik");
+@import url("https://fonts.googleapis.com/css2?family=Raleway");
 
 ::-webkit-scrollbar {
-  width: 12px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
 }
 
-
-
 ::-webkit-scrollbar-thumb {
-  background: #ef4444;
-  border-radius: 5px
+  background-color: #f87171;
+  border-radius: 0px;
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #dc2626;
+  background-color: #dc2626;
+}
+::-webkit-scrollbar-track:hover {
+  background-color: #fb7185;
+}
+
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --Primary: #ef4444;
+  --secondary: #faf5ff;
 }

@@ -5,7 +5,7 @@ function Notification() {
     <div  
       className="
       h-12 
-      bg-red-500 text-white text-sm
+      bg-[--Primary] text-white text-sm
       flex justify-center items-center 
       md:text-base 
       cursor-pointer"

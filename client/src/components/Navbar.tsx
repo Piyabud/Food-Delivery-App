@@ -9,9 +9,9 @@ function Navbar() {
   return (
     <div
       className="
-      h-12 text-red-500 p-4 
+      h-12 text-[--Primary] p-4 
       flex items-center justify-between 
-      border-b-2 border-b-pink-500 uppercase 
+      border-b-2 border-[--Primary] uppercase 
       md:h-24 lg:px-9 xl:px-40
     "
     >
@@ -22,7 +22,7 @@ function Navbar() {
         <Link href={"/"}>Contract</Link>
       </div>
       {/* LoGO */}
-      <div className="text-xl font-bold flex-1 md:text-center">
+      <div className="text-3xl  font-extrabold flex-1 md:text-center">
         <Link href="/">Pizza Heart</Link>
       </div>
       {/* Mobile */}
@@ -44,14 +44,14 @@ function Navbar() {
         {!user ? (
           <Link
             href={"/login"}
-            className="font-semibold border-b-2 border-red-500 p-2  text-red-500 ml-4"
+            className="font-semibold border-b-2 border-[--Primary] p-2  text-[--Primary] ml-4"
           >
             Login
           </Link>
         ) : (
           <Link
             href={"/orders"}
-            className="font-semibold border-b-2 border-red-500 p-2  text-red-500 ml-4"
+            className="font-semibold border-b-2 border-[--Primary] p-2  text-[--Primary] ml-4"
           >
             Orders
           </Link>

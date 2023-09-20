@@ -32,13 +32,13 @@ function Slider() {
   }, []);
   ///////////////////////////////
   return (
-    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-pink-50">
+    <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-[--secondary]">
       {/* TEXT-CON */}
-      <div className=" flex flex-1 items-center justify-center flex-col gap-8 text-red-500 font-bold ">
+      <div className=" flex flex-1 items-center justify-center flex-col gap-8 text-[--Primary] font-bold ">
         <h1 className="text-5xl text-center uppercase p-4 md:p-10 md:text-6xl xl:text-7xl">
           {data[currSlide].title}
         </h1>
-        <button className="bg-red-500 text-white py-4 px-8">Order Now</button>
+        <button className="bg-[--Primary] text-white py-4 px-8">Order Now</button>
       </div>
       {/* IMG-CON */}
       <div className=" w-full relative flex-1">
