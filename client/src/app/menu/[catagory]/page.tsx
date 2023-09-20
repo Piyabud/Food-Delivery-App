@@ -11,7 +11,7 @@ function CategoryPage() {
           key={index}
           href={`/product/${product.id}`}
           className="group w-full h-[60vh] border-r-2 border-b-2 
-          sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between odd:bg-pink-50  relative overflow-hidden"
+          sm:w-1/2 lg:w-1/3 p-4 flex flex-col justify-between odd:bg-violet-50  relative overflow-hidden"
         >
           {/* IMG-CON */}
           {product.img && (

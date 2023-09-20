@@ -2,18 +2,17 @@ import { featuredProducts } from "@/data";
 import Image from "next/image";
 import React from "react";
 
-
 function Featured() {
   return (
     <div className=" w-full text-red-500 overflow-x-scroll">
       {/* Wrapper */}
-      <div className="w-max flex">
+      <div className="w-max flex ">
         {/* SINGLE ITEM  */}
         {featuredProducts.map((item) => (
           <div
             key={item.id}
-            className="w-screen h-[60vh] flex flex-col items-center justify-around p-4 
-            hover:bg-pink-50 transition-all duration-300
+            className="group w-screen h-[60vh] flex flex-col items-center justify-around p-4 
+            hover:bg-violet-50 transition-all duration-300
             md:w-[50vw] xl:w-[33vw] xl:h-[90vh] 
            "
           >
@@ -21,7 +20,7 @@ function Featured() {
             {item.img && (
               <div
                 className="relative flex-1 w-full my-4
-              hover:rotate-[5deg] transition-all duration-500
+              group-hover:rotate-[5deg] transition-all duration-500
               lg:my-2 xl:my-0"
               >
                 <Image src={item.img} alt="" fill className="object-contain" />
