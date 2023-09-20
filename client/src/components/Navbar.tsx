@@ -11,7 +11,7 @@ function Navbar() {
       className="
       h-12 text-red-500 p-4 
       flex items-center justify-between 
-      border-b-2 border-pink-500 uppercase 
+      border-b-2 border-red-500 uppercase 
       md:h-24 lg:px-9 xl:px-40
     "
     >
@@ -22,7 +22,7 @@ function Navbar() {
         <Link href={"/"}>Contract</Link>
       </div>
       {/* LoGO */}
-      <div className="text-xl font-bold flex-1 md:text-center">
+      <div className="text-3xl  font-extrabold flex-1 md:text-center">
         <Link href="/">Pizza Heart</Link>
       </div>
       {/* Mobile */}
