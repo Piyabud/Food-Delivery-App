@@ -1,9 +1,18 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import Price from "@/components/Price";
-import { singleProduct } from "@/data";
+import { pizzas } from "@/data";
 import Image from "next/image";
 import React from "react";
 
 const SingleProductPage = () => {
+  const params = useParams();
+  const paramID: string | string[] = params.id;
+  const pizzaIndex = Array.isArray(paramID)
+    ? Number(paramID) - 1
+    : Number(paramID) - 1;
+
   return (
     <div
       className="p-2 lg:px-20 xl:px-40 h-screen 
@@ -12,10 +21,10 @@ const SingleProductPage = () => {
     "
     >
       {/* IMAGE CONTAINER */}
-      {singleProduct.img && (
+      {pizzas[pizzaIndex].img && (
         <div className="relative w-full h-1/2 mb-6 md:h-[100%]">
           <Image
-            src={singleProduct.img}
+            src={`${pizzas[pizzaIndex].img}`}
             alt=""
             className="object-contain"
             fill
@@ -29,13 +38,13 @@ const SingleProductPage = () => {
       md:h-[70%] md:justify-center md:gap-6 xl:gap-8"
       >
         <h1 className="text-3xl font-bold uppercase xl:text-5xl">
-          {singleProduct.title}
+          {pizzas[pizzaIndex].title}
         </h1>
-        <p>{singleProduct.desc}</p>
+        <p>{pizzas[pizzaIndex].desc}</p>
         <Price
-          price={singleProduct.price}
-          id={singleProduct.id}
-          size={singleProduct.size}
+          price={pizzas[pizzaIndex].price}
+          id={pizzas[pizzaIndex].id}
+          size={pizzas[pizzaIndex].size}
         />
       </div>
     </div>
