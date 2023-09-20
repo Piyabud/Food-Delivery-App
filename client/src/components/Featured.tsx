@@ -4,7 +4,7 @@ import React from "react";
 
 function Featured() {
   return (
-    <div className=" w-full text-red-500 overflow-x-scroll">
+    <div className=" w-full text-[--Primary] overflow-x-scroll">
       {/* Wrapper */}
       <div className="w-max flex ">
         {/* SINGLE ITEM  */}
@@ -12,7 +12,7 @@ function Featured() {
           <div
             key={item.id}
             className="group w-screen h-[60vh] flex flex-col items-center justify-around p-4 
-            hover:bg-violet-50 transition-all duration-300
+            hover:bg-[--secondary] transition-all duration-300
             md:w-[50vw] xl:w-[33vw] xl:h-[90vh] 
            "
           >
@@ -33,7 +33,7 @@ function Featured() {
               </h1>
               <p className="p-4 2xl:p-8">{item.desc}</p>
               <span className="text-xl font-bold ">${item.price}</span>
-              <button className="bg-red-500 text-white p-2 rounded-md">
+              <button className="bg-[--Primary] text-white p-2 rounded-md">
                 Add to Cart
               </button>
             </div>

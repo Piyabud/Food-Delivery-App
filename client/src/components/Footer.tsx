@@ -5,9 +5,9 @@ function Footer() {
   return (
     <div
       className="
-    h-12 text-sm border-t-2 border-red-500
+    h-12 text-sm border-t-2 border-[--Primary]
     md:h-24 p-4 md:text-sm lg:px-20 xl:px-40
-  text-red-500 
+  text-[--Primary] 
     flex items-center justify-between"
     >
       <Link

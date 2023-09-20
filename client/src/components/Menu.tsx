@@ -27,7 +27,7 @@ function Menu() {
       {openMenu && (
         <div
           className="
-        bg-red-500 text-white 
+        bg-[--Primary] text-white 
         absolute top-24 left-0  
         h-[calc(100vh-6rem)] w-full 
         flex flex-col gap-8 items-center justify-center 

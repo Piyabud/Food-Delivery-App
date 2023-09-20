@@ -7,7 +7,7 @@ const SingleProductPage = () => {
   return (
     <div
       className="p-2 lg:px-20 xl:px-40 h-screen 
-    flex flex-col justify-around text-red-500 
+    flex flex-col justify-around text-[--Primary] 
     md:flex-row md:gap-10 md:items-center
     "
     >

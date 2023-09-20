@@ -43,7 +43,7 @@ function Price({ price, id, size }: Props) {
       {/* QUANTITY / ADD BUTTON CON */}
       <div className="flex justify-between items-center">
         {/* Quantity */}
-        <div className="w-full p-3 flex justify-between items-center ring-1 ring-red-500 ">
+        <div className="w-full p-3 flex justify-between items-center ring-1 ring-[--Primary] ">
           <span className="">Quantity</span>
           <div className="flex gap-4 items-center font-semibold">
             <button
@@ -57,7 +57,7 @@ function Price({ price, id, size }: Props) {
             >{`+`}</button>
           </div>
         </div>
-        <button className="uppercase w-56 bg-red-500 text-white p-3 ring-1 ring-red-500 ">
+        <button className="uppercase w-56 bg-[--Primary] text-white p-3 ring-1 ring-[--Primary] ">
           {" "}
           add to cart
         </button>
