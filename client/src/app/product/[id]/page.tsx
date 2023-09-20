@@ -8,10 +8,8 @@ import React from "react";
 
 const SingleProductPage = () => {
   const params = useParams();
-  const paramID: string | string[] = params.id;
-  const pizzaIndex = Array.isArray(paramID)
-    ? Number(paramID) - 1
-    : Number(paramID) - 1;
+  const paramID = params.id;
+  const pizzaIndex = Number(paramID) - 1;
 
   return (
     <div
