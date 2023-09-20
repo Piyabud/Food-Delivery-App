@@ -5,10 +5,16 @@ const CartPage = () => {
   return (
     <div className="h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex flex-col text-red-500 lg:flex-row">
       {/* PRODUCTS CONTAINER */}
-      <div className="h-full p-6 gap-8 flex flex-col justify-center  overflow-scroll lg:h-full lg:w-2/3 lg:p-8 2xl:w-[75vw] lg:px-20 xl:px-40">
+      <div className="h-full p-6 gap-8 flex flex-col justify-center  overflow-scroll md:gap-10 lg:gap-16 lg:h-full lg:w-2/3 lg:p-8 2xl:w-[75vw] lg:px-20 xl:px-40">
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between ">
-          <Image src="/temporary/p1.png" alt="" width={100} height={100} />
+          <Image
+            src="/temporary/p1.png"
+            alt=""
+            width={120}
+            height={120}
+            className="md:scale-[1.2]"
+          />
           <div className="">
             <h1 className="uppercase text-xl font-bold">sicilian</h1>
             <span>Large</span>
@@ -24,7 +30,13 @@ const CartPage = () => {
         </div>
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between ">
-          <Image src="/temporary/p1.png" alt="" width={100} height={100} />
+          <Image
+            src="/temporary/p1.png"
+            alt=""
+            width={120}
+            height={120}
+            className="md:scale-[1.2]"
+          />
           <div className="">
             <h1 className="uppercase text-xl font-bold">sicilian</h1>
             <span>Large</span>
@@ -40,7 +52,13 @@ const CartPage = () => {
         </div>
         {/* SINGLE ITEM */}
         <div className="flex items-center justify-between ">
-          <Image src="/temporary/p1.png" alt="" width={100} height={100} />
+          <Image
+            src="/temporary/p1.png"
+            alt=""
+            width={120}
+            height={120}
+            className="md:scale-[1.2]"
+          />
           <div className="">
             <h1 className="uppercase text-xl font-bold">sicilian</h1>
             <span>Large</span>
