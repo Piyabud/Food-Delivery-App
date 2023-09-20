@@ -8,17 +8,18 @@ const SingleProductPage = () => {
     <div
       className="p-2 lg:px-20 xl:px-40 h-screen 
     flex flex-col justify-around text-[--Primary] 
-    md:flex-row md:gap-10 md:items-center
+    md:flex-row md:gap-24 md:items-center
     "
     >
       {/* IMAGE CONTAINER */}
       {singleProduct.img && (
-        <div className="relative w-full h-1/2 mb-6 md:h-[70%]">
+        <div className="relative w-full h-1/2 mb-6 md:h-[100%]">
           <Image
             src={singleProduct.img}
             alt=""
             className="object-contain"
             fill
+            loading="lazy"
           />
         </div>
       )}
