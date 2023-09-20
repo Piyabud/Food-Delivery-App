@@ -5,7 +5,7 @@ function Footer() {
   return (
     <div
       className="
-    h-12 text-sm
+    h-12 text-sm border-t-2 border-pink-500
     md:h-24 p-4 md:text-sm lg:px-20 xl:px-40
   text-red-500 
     flex items-center justify-between"
