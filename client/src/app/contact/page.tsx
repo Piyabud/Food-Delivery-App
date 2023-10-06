@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <div className="p-4 h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] flex items-center justify-center">
       {/* BOX */}
-      <div className=" h-full shadow-2xl rounded-md flex flex-col md:flex-row md:h-[80%] md:w-full lg:w-[80%] 2xl:w-[80%]">
+      <div className=" h-full shadow-2xl rounded-md flex flex-col md:flex-row  md:w-[80%] ">
         {/* IMAGE CONTAINER */}
         <div className="relative h-1/2 w-full md:h-full md:w-1/2">
           <Image src="/IMG_2378.JPG" alt="" fill className="object-cover" />
