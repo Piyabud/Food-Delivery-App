@@ -19,7 +19,7 @@ function Navbar() {
       <div className="hidden md:flex gap-6 flex-1 font-bold">
         <Link href={"/"}>Homepage</Link>
         <Link href={"/menu"}>Menu</Link>
-        <Link href={"/"}>Contract</Link>
+        <Link href={"/contract"}>Contract</Link>
       </div>
       {/* LoGO */}
       <div className="text-3xl  font-extrabold flex-1 md:text-center">
